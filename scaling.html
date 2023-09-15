@@ -11,24 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
 
 
 </head>
-<style>
-    owl-item > div {
-  cursor: pointer;
-  margin: 6% 8%;
-  transition: margin 0.4s ease;
-}
-.owl-item.center > div {
-  cursor: auto;
-  margin: 0;
-}
-.owl-item:not(.center) > div:hover {
-  opacity: .75;
-}
-</style>
+
 
 <body>
     <header></header>
@@ -59,17 +48,70 @@
         </div>
     </div>
     <!-- sec-2 -->
-    <div class="container">
-        <div class="owl-carousel">
-          <div><img src="https://via.placeholder.com/400x300/f06/fff/?text=1" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/f63/fff/?text=2" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/fc3/fff/?text=3" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/693/fff/?text=4" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/3cc/fff/?text=5" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/369/fff/?text=6" alt=""></div>
-          <div><img src="https://via.placeholder.com/400x300/936/fff/?text=7" alt=""></div>
+   <!-- <div class="container">
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12">
+
         </div>
-      </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <section id="slider" class="pt-5">
+                <div class="container">
+                  <h4 class="text-center">Gallery</h4>
+                    <div class="slider">
+                              <div class="owl-carousel">
+                                  <div class="slider-card">
+                                      <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <a href="#" class="card-link">Card link</a>
+                                              <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                          </div>
+                                      </div>
+                                     
+                                  </div>
+                                  <div class="slider-card">
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <a href="#" class="card-link">Card link</a>
+                                              <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <div class="slider-card">
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Card title</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                              <a href="#" class="card-link">Card link</a>
+                                              <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                               
+                                 
+                              </div>
+                          </div>
+                </div>
+              </section>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+
+        </div>
+        </div>
+        
+      </div>  -->
     <!-- sect-2-end -->
     <!-- sect-3 -->
     <div class="container max-2 bgad">
@@ -263,26 +305,12 @@
         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./Assets/JS/script.js"></script>
-    <script>
-        var $owl = $('.owl-carousel');
-
-$owl.children().each( function( index ) {
-  $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
-});
-
-$owl.owlCarousel({
-  center: true,
-  loop: true,
-  items: 5,
-});
-
-$(document).on('click', '.owl-item>div', function() {
-  // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
-  var $speed = 300;  // in ms
-  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
-});
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+	<script src="Assets/js/owl.carousel.min.js"></script>
+	<script src="Assets/js/script.js"></script>
+    
 </body>
 
 </html>
