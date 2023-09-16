@@ -272,33 +272,33 @@
             <div class="col-lg-7 col-md-7 col-sm-12">
                 <h6>Currency:</h6>
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn f-bt"><img src="./Assets/Images/usd-round-flag.png"
                                 class="flg">&nbsp;&nbsp;USD</button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/gbp-round-flag.png"
                                 class="flg">&nbsp;&nbsp;GBP</button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/eur-round-flag.png"
                                 class="flg">&nbsp;&nbsp;EUR</button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/czk-round-flag.png"
                                 class="flg">&nbsp;&nbsp;CZK</button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/cad-round-flag.png"
                                 class="flg">&nbsp;CAD</button>
                     </div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/aud-round-flag.png"
                                 class="flg">&nbsp;&nbsp;AUD</button>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-flex">
                         <button class="flg-btn"><img src="./Assets/Images/chf-round-flag.png"
                                 class="flg">&nbsp;&nbsp;CHF</button>
                     </div>
@@ -306,10 +306,11 @@
                 </div>
                 <div class="max">
                     <h6>Risk:</h6>
-                    <div class="row mt-2">
+                    <div class="row mt-2 dollers">
                         <div class="col-2">
                             <button class="flg-btn f-bt">Normal</button>
                         </div>
+                        <br>
                         <div class="col-2">
                             <button class="flg-btn">Aggressive</button>
                         </div>
@@ -320,7 +321,7 @@
                 <div class="max">
                     <h6>Balance:
                     </h6>
-                    <div class="row">
+                    <div class="row dollers">
                         <div class="col-2">
                             <button class="flg-btn f-bt">$10000</button>
                         </div>
@@ -333,6 +334,7 @@
                         <div class="col-2">
                             <button class="flg-btn">$100000</button>
                         </div>
+                        <br>
                         <div class="col-2">
                             <button class="flg-btn">$200000</button>
                         </div>
@@ -477,8 +479,32 @@
     </div>
 
     <!-- card-new tow -->
-    <div class="container max-2 bgad">
-        <div class="card cds">
+    <div class="container max-2 ">
+        <div class="bgad">
+            <div class="card cds">
+                <div class="card-body">
+                    <h5 class="card-title swing">Payout System</h5>
+                    <p class="card-text" id="seala">The default payout ratio for all Demo Traders is set to 80:20,
+                        however, an 80% share is not where we draw the line.
+                        <br>
+                        If you meet the conditions of our Scaling Plan, not only do we increase the balance of your
+                        Demo Account by 25%, the payout ratio will also automatically change to a staggering 90:10!
+                        <br>
+                        All Demo Traders can request payout on-demand. The payout can be processed just after 14
+                        days, but you also have the ability to choose your own Profit Split Day, which can be even
+                        changed up to three times. In conclusion, we make sure that you will always receive your
+                        withdrawal on your most convenient day.
+                    </p>
+    
+                </div>
+    
+            </div>
+        </div>
+       
+
+    </div>
+    <div class="container">
+        <div class="card cds-mobile">
             <div class="card-body">
                 <h5 class="card-title swing">Payout System</h5>
                 <p class="card-text" id="seala">The default payout ratio for all Demo Traders is set to 80:20,
@@ -496,34 +522,63 @@
             </div>
 
         </div>
-
     </div>
 
+    <!-- next card -->
 
-    <div class="container max-2 bgads">
-        <div class="card cdsss" >
-            <div class="card-body">
-                <h5 class="card-title swing">The most popular
-                    retail trading platforms</h5>
-                <p class="card-text" id="seala">We offer all our clients the best trading solution in the form of our
-                    MT4, MT5 and cTrader accounts powered by data feed directly from our pool of prime liquidity
-                    providers. We do our best to simulate the real market conditions with super-raw spreads, very low
-                    commission and no markup to all demo trading accounts with virtual funds.</p>
-                <div class="row">
-                    <div class="col-4">
-                        <img src="./Assets/Images/MT4.png" class="mtt">
-                    </div>
-                    <div class="col-4">
-                        <img src="./Assets/Images/MT5.png" class="mtt">
-                    </div>
-                    <div class="col-4">
-                        <img src="./Assets/Images/Ctrader-png.png" class="mtts">
+    <div class="container max-2">
+        <div class="bgads">
+            <div class="card cdsss" >
+                <div class="card-body">
+                    <h5 class="card-title swing">The most popular
+                        retail trading platforms</h5>
+                    <p class="card-text" id="seala">We offer all our clients the best trading solution in the form of our
+                        MT4, MT5 and cTrader accounts powered by data feed directly from our pool of prime liquidity
+                        providers. We do our best to simulate the real market conditions with super-raw spreads, very low
+                        commission and no markup to all demo trading accounts with virtual funds.</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./Assets/Images/MT4.png" class="mtt">
+                        </div>
+                        <div class="col-4">
+                            <img src="./Assets/Images/MT5.png" class="mtt">
+                        </div>
+                        <div class="col-4">
+                            <img src="./Assets/Images/Ctrader-png.png" class="mtts">
+                        </div>
                     </div>
                 </div>
+    
             </div>
-
         </div>
+     
+        
 
+    </div>
+    <div class="container">
+ <!-- mobile view -->
+ <div class="card  mobi-card" >
+    <div class="card-body">
+        <h5 class="card-title swing">The most popular
+            retail trading platforms</h5>
+        <p class="card-text" id="seala">We offer all our clients the best trading solution in the form of our
+            MT4, MT5 and cTrader accounts powered by data feed directly from our pool of prime liquidity
+            providers. We do our best to simulate the real market conditions with super-raw spreads, very low
+            commission and no markup to all demo trading accounts with virtual funds.</p>
+        <div class="row">
+            <div class="col-4">
+                <img src="./Assets/Images/MT4.png" class="mtt">
+            </div>
+            <div class="col-4">
+                <img src="./Assets/Images/MT5.png" class="mtt">
+            </div>
+            <div class="col-4">
+                <img src="./Assets/Images/Ctrader-png.png" class="mtts">
+            </div>
+        </div>
+    </div>
+
+</div>
     </div>
 
     <!-- We are more than just a Modern Prop Trading Firm -->
