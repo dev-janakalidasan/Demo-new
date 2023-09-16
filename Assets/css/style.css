@@ -1113,11 +1113,13 @@ color: #898588;
   .cds-mobile{
     display: none;
   }
-
+  .cds-123{
+    display: none;
+}
 /* mobile view */
 @media (max-width:540px){
     .ser-box-2 {
-        padding: 0px 100px 0px 20px;
+        padding: 0px 75px 0px 20px;
         background: #D9D9D9;
         backdrop-filter: blur(1px);
         color: #fff;
@@ -1243,5 +1245,59 @@ color: #898588;
     .sam h4 {
         font-size: 20px;
         line-height: 34px;
+    }
+    .our-trade-1 br{
+        display: none;
+    }
+    #seala-1 {
+        font-size: 12px;
+        color: grey;
+        margin-bottom: 30px;
+        line-height: 47px;
+    }
+    .nxsa-1 {
+        line-height: 158%;
+    }
+    .form-con {
+        padding: 65px 35px 65px 35px !important;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    .scs {
+        background-color: rgb(51, 51, 51);
+        height: 300px;
+        width: 375px;
+        margin-left: 0%;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .crsa {
+        height: 236px;
+    }
+    .spca {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .vie-all {
+        text-align: center;
+        color: #fff;
+        padding-top: 40px;
+    }
+    .cds-1{
+        display: none;
+    }
+    .cds-123{
+        display: block;
+    }
+    .bgad-12 {
+      
+        margin-top: -187px;
+    }
+    .cds-123 {
+        display: block;
+        margin-top: -132px;
+        border-radius: 20px;
+    }
+    .bgad-4 {
+        margin-top: -150px;
     }
 }
