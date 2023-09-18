@@ -832,7 +832,7 @@ color: #898588;
     font-size: 6pc;
     font-weight: 400;
 }
-#affliate3-sm{
+#affliate3-sms{
     display: none;
 }
 .aff-sec4-head {
@@ -1301,8 +1301,27 @@ border-top-right-radius: 12px;
     .bl-abo{
         display: block;
     }
-    #affliate3-sm{
-        display: block;
+    #affliate3-sms{
+        display: block !important;
+    }
+    #affliate3-lg{
+        display:none;
+    }
+    #AffiliateCaraousel .carousel-indicators [data-bs-target] {
+        width: 18px !important;
+        height: 18px !important;
+        background-clip: unset !important;
+        border-top: 0 solid transparent !important;
+        border-bottom: 0px solid transparent !important;
+        border-radius: 51px !important;
+    }
+    #AffiliateCaraousel .carousel-indicators .active {
+        opacity: 1;
+        height: 20px !important;
+        width: 20px !important;
+        position: relative;
+        bottom: 1px !important;
+        background-color: #1945ba;
     }
     .aff-img-comp{
         height: 700px;
