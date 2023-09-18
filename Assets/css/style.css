@@ -532,7 +532,7 @@ width: 117px;
     padding-top: 40px;
     font-size: 20px;
     line-height: 30px;
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .arr-ow-1 .carousel-control-prev-icon {
@@ -1299,5 +1299,63 @@ color: #898588;
     }
     .bgad-4 {
         margin-top: -150px;
+    }
+}
+@media (min-width: 1500px) and (max-width:1890px){
+    .cds {
+        top: 11%;
+        left: 20% !important;
+    }
+    .cdsss {
+        left: 50%;
+    }
+    .scs {
+        background-color: rgb(51, 51, 51);
+        height: 300px;
+        width: 100%;
+        margin-left: 36.5%;
+        border-radius: 20px 0px 0px 0px;
+    }
+    .con-us {
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1900px){
+    .cds {
+        top: 11%;
+        left: 20% !important;
+    }
+    .cdsss {
+        left: 50%;
+    }
+    .teams {
+        color: #fff;
+        padding-top: 40px;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 0px !important;
+    }
+    .cds-1 {
+        padding: 10px 5px 10px 5px;
+        width: 25rem;
+        display: flex;
+        top: 5%;
+        left: 5%;
+        height: 35rem;
+        border-radius: 20px;
+    }
+    .scs {
+        background-color: rgb(51, 51, 51);
+        height: 300px;
+        width: 100%;
+        margin-left: 36.5%;
+        border-radius: 20px 0px 0px 0px;
+    }
+    .con-us {
+        color: #000000;
+        font-weight: bold;
+        margin-bottom: 30px;
     }
 }
