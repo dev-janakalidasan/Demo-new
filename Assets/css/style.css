@@ -1333,9 +1333,9 @@ border-top-right-radius: 12px;
     .affliate3-para br{
         display: none;
     }
-    .affliate3-card1{
+    /* .affliate3-card1{
         display: none;
-    }
+    } */
     .aff-sec4-head {
         color: #000000;
         font-size: 27px;
@@ -1485,6 +1485,15 @@ border-top-right-radius: 12px;
     .bgad {
     
         margin-top: -41px !important;
+    }
+    .affliate3-card-head {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .co-mission{
+        color: #000000;
     }
 }
 @media (min-width: 1500px) and (max-width:1890px){
