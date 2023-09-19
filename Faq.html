@@ -12,7 +12,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -20,7 +20,7 @@
     <header></header>
 
     <div class="container-fluid">
-        <div class="text-2">
+        <div class="text-2"data-aos="fade-left" data-aos-duration="1000">
             <h2 class="for-trd">Frequently Asked </h2>&nbsp;<h2 class="want card">Questions</h2>
         </div>
         <div class="container">
@@ -95,12 +95,10 @@
   </div>
     <br>
     <footer></footer>
-    <script>
-        AOS.init({
-            duration: 1200,
-            once: false,
-        });
-    </script>
+    <script type="text/javascript">
+      AOS.init();
+  </script>
+  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./Assets/JS/script.js"></script>
 </body>

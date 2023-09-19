@@ -1363,7 +1363,7 @@ border-top-right-radius: 12px;
     .mobi-card {
         display: block !important;
         padding: 10px 5px 10px 5px;
-        width: 23rem;
+        width: 21rem;
         top: 0%;
         left: 0%;
         height: 25rem;
@@ -1376,7 +1376,7 @@ border-top-right-radius: 12px;
     .cds-mobile {
         display: block;
         padding: 10px 5px 10px 5px;
-        width: 23rem;
+        width: 21rem;
         display: flex;
         top: 0%;
         left: 0%;

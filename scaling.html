@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="Assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <style>
@@ -25,7 +25,7 @@
     <header></header>
 
     <div class="container-fluid">
-        <div class="text-2">
+        <div class="text-2" data-aos="fade-left" data-aos-duration="1000">
             <h1 class="for-trd">Scaling</h1>&nbsp;<h1 class="want card">Plan</h1>
         </div>
         <div class="container">
@@ -379,12 +379,7 @@
     </div>
     <br>
     <footer></footer>
-    <script>
-        AOS.init({
-            duration: 1200,
-            once: false,
-        });
-    </script>
+  
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
@@ -392,13 +387,11 @@
 	<script src="Assets/js/owl.carousel.min.js"></script>
 	<script src="Assets/js/script.js"></script>
     
-    <script>
-        function moveToFront(card) {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach((c) => c.classList.remove('front-card'));
-            card.classList.add('front-card');
-        }
+ 
+      <script type="text/javascript">
+        AOS.init();
     </script>
+    
     
 </body>
 
