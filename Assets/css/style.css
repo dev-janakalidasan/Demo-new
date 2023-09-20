@@ -1282,6 +1282,12 @@ border-top-right-radius: 12px;
 }
 /* mobile view */
 @media (max-width:540px){
+    #fors{
+        margin-left: -95px;
+    }
+    #navbarSupportedContent{
+        margin-left: -100px;
+    }
     #navbarSupportedContent ul li a {
         color: #ffffff;
         margin-left: -90px !important;
