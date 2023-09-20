@@ -467,6 +467,15 @@ width: 117px;
     margin-top: 5px;
     border: 2px solid #000;
 }
+.btn-one-1s:hover {
+    background-color:#FFFFFF;
+    padding: 10px 30px 10px 30px;
+    font-size: 12px;
+    border-radius: 20px;
+    color: #000000;
+    margin-top: 5px;
+    border: 2px solid #000;
+}
 .imas{
     display: flex;
     justify-content: center;
@@ -1266,6 +1275,10 @@ border-top-right-radius: 12px;
 }
 .nd-ns{
     display: none ;
+}
+.foot-style{
+    text-decoration-line: none;
+    color: #FFFFFF;
 }
 /* mobile view */
 @media (max-width:540px){
