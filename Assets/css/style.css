@@ -24,7 +24,7 @@ body{
 }
 .navbar-bg {
     min-height: 55px !important;
-    background-color: transparent;
+    background-color: #000000;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   
@@ -73,8 +73,9 @@ body{
     padding: 30px 0px 0px 0px;
     font-size: 12px;
 }
-.footdemo{
+.footdemo {
     padding: 45px 0px 0px 0px;
+    font-weight: 700;
 }
 /* index */
 .for-trd {
@@ -98,12 +99,15 @@ body{
 .our-trade {
     font-size: 18px;
     text-align: center;
-    opacity: .8;
+   color: #4B4A4A;
+   margin-top: 30px;
 }
-.demo-chan{
+.demo-chan {
     font-size: 15px;
     text-align: center;
     font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .cir-arr{
     width: 25px;
@@ -119,9 +123,38 @@ body{
 }
 .sec-3{
     color: #000;
+    font-weight: 600;
 }
 .m-t{
     margin-top: 10%;
+}
+.fir-img{
+width: 85px;
+height: 85px;
+margin-top: 50px;
+margin-bottom: 5px;
+}
+#card-for-leader{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 15rem;
+}#card-for-leader .card-title{
+    text-align: center;
+}#card-for-leader .card-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cr-two{
+    margin-left: -160px;
+    z-index: -1;
+}
+.cr-three{
+    margin-left: -160px;
+    z-index: -2;
+}
+.cilr{
+    margin-top: -28px;
 }
 .btn-one-1{
  
@@ -130,7 +163,7 @@ body{
         font-size: 12px;
         border-radius: 20px;
         color: #fff;
-        margin-top: -30px;
+        margin-top: -38px;
         border: 2px solid #000;
 
 }
@@ -140,7 +173,27 @@ body{
     font-size: 12px;
     border-radius: 20px;
     color: #000;
-    margin-top: -30px;
+    margin-top: -38px;
+    border: 2px solid #000;
+}
+.btn-one-2{
+ 
+    background-color: #000;
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 0px;
+    border: 2px solid #000;
+}
+.btn-one-2:hover{
+ 
+    background-color: #FFF;
+    padding: 7px 30px 7px 30px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #000;
+    margin-top: 0px;
     border: 2px solid #000;
 }
 #navbarSupportedContent ul li a {
@@ -246,6 +299,12 @@ hr {
     border: 1.5px solid #000;
     border-radius: 15px;
   }
+  .crd .card-title{
+    font-weight: bold;
+  }
+  .max-5{
+    margin-top: 20px;
+  }
   .d-color {
     color: #4B4A4A;
     font-size: 13px;
@@ -265,16 +324,21 @@ hr {
     border-radius: 20px;
     border: none;
     font-size: 12px;
+    font-weight: 600;
 }
 .f-bt{
 color: #FFF;
 background-color: #2E2E2E;
+font-weight: 600;
+}
+.curr{
+    margin-bottom: 15px;
 }
 .max{
     margin-top: 20px;
 }
 .mx-to {
-    margin-top: 23%;
+    margin-top: 21%;
 }
 .bg-wht{
     background-color: #fff;
@@ -288,20 +352,22 @@ background-color: #2E2E2E;
     font-size: 11px;
    
 }
-.nxsa th{
+.nxsa th {
     border-bottom: none;
+    font-size: 15px;
+    line-height: 25px;
 }
 .asa td {
     background-color: #EBEBEB !important;
     border-left: 2px solid #fff;
-    font-size: 12px;
+    font-size: 14px;
     border-bottom:none ;
 }
 .asa th {
     width: 30%;
     text-align: initial;
-    font-size: 15px;
-    border-bottom:none ;
+    font-size: 18px;
+    border-bottom: none;
 }
 .asa{
     line-height: 50px;
@@ -341,6 +407,10 @@ background-color: #2E2E2E;
 .swing {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 18px;
+}
+.new-seel{
+margin-bottom: 50px !important;
 }
 .max-2{
     margin-top: 10%;
@@ -358,7 +428,7 @@ background-color: #2E2E2E;
     color: #fff;
 }
 .joins p{
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     margin-bottom: 55px;
     color: #fff;
@@ -376,6 +446,8 @@ background-color: #2E2E2E;
     margin-top: -30px;
     border: 1px solid #000;
     height: 45px;
+    margin-left: 10px;
+    font-weight: 500;
 }
 .btn-one-12:hover {
     background-color: #000;
@@ -386,6 +458,8 @@ background-color: #2E2E2E;
     margin-top: -30px;
     border: 1px solid #fff;
     height: 45px;
+    margin-left: 10px;
+    font-weight: 500;
 }
 .btn-one-13 {
     background-color: #000;
@@ -396,6 +470,7 @@ background-color: #2E2E2E;
     margin-top: -30px;
     border: 1px solid #fff;
     height: 45px;
+    font-weight: 500;
 }
 .btn-one-13:hover {
     background-color: #fff;
@@ -406,17 +481,18 @@ background-color: #2E2E2E;
     margin-top: -30px;
     border: 1px solid #fff;
     height: 45px;
+    font-weight: 500;
 }
 .bgs{
     height: 16%;
 }
 .cds {
-    padding: 10px 5px 10px 5px;
-    width: 25rem;
+    padding: 10px 20px 10px 20px;
+    width: 28rem;
     display: flex;
-    top: 11%;
-    left: 10%;
-    height: 25rem;
+    top: 8%;
+    left: 5%;
+    height: 27rem;
     border-radius: 20px;
 }
 .bgad {
@@ -430,14 +506,14 @@ background-color: #2E2E2E;
 #seala {
     font-size: 13px;
     color: #4B4A4A;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .bgads {
     background-image: url('../Images/Rectangle-56.png') !important;
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 530px;
     /* width: 74rem; */
 }
 .cdss {
@@ -449,13 +525,16 @@ background-color: #2E2E2E;
     height: 25rem;
 }
 .cdsss {
-    padding: 10px 5px 10px 5px;
-    width: 25rem;
+    padding: 10px 35px 10px 35px;
+    width: 28rem;
     display: flex;
     top: 10%;
     left: 55%;
     height: 25rem;
     border-radius: 20px;
+}
+#down-mt4{
+    margin-top: 50px;
 }
 .mtt{
 width: 117px;
@@ -464,8 +543,9 @@ width: 117px;
     width: 80px;
 }
 .trades {
-    width: 100%;
-    height: 85%;
+    width: 90%;
+    height: 75%;
+    margin-top: 15px;
 }
 .sam h4 {
     font-size: 20px;
@@ -503,7 +583,7 @@ width: 117px;
     justify-content: center;
 }
 .sam {
-    margin-top: 120px;
+    margin-top: 180px;
 }
 .comment{
     margin-top: 70px;
@@ -511,6 +591,9 @@ width: 117px;
 .cus {
     font-size: 19px;
     font-weight: 700;
+}
+.foot-heads{
+    font-weight: 600;
 }
 .carousel-indicators #new-cio {
     box-sizing: content-box;
@@ -553,11 +636,11 @@ width: 117px;
 }
 #arr-ow  .carousel-control-prev {
     left: 80% !important;
-    top: 95%;
+    top: 90%;
 }
 #arr-ow .carousel-control-next {
     right: 0;
-    top: 95%;
+    top: 90%;
 }
 .sas{
     display: none !important;
@@ -616,7 +699,7 @@ width: 117px;
     margin-bottom: 50px;
 }
 #seala-1 {
-    font-size: 13px;
+    font-size: 14px;
     color: grey;
     margin-bottom: 30px;
     line-height: 45px;
@@ -656,10 +739,14 @@ width: 117px;
     padding: 10px 605px 10px 10px;
     background: #D9D9D9;
     backdrop-filter: blur(1px);
-    color: #fff;
+    color: #000;
     text-decoration: none !important;
     border: 0px !important;
     border-radius: 10px;
+   
+}
+.ser-box-2:focus-visible{
+   outline: none !important;
 }
 .ser-box {
     padding: 0px 0px 0px 20px;
@@ -669,6 +756,7 @@ width: 117px;
     text-decoration: none;
     border: 0px !important;
     border-radius: 10px;
+    cursor: pointer;
 }
 .demo-chan-1 {
     font-size: 15px;
@@ -717,7 +805,8 @@ width: 117px;
  }
  #tab .how-1 {
     color: #1E1E1E;
-    width: 46.5%;
+    width: 40%;
+    font-weight: 700;
 }
 
 /* contactus */
@@ -900,6 +989,10 @@ color: #898588;
     justify-content: center !important;
     align-items: center;
 }
+.rewards-canva, .highconverstion-canva {
+    padding: 10% 11%;
+}
+
 .payout-proce-head {
     color: #fff;
     text-align: center;
@@ -967,13 +1060,13 @@ color: #898588;
 .aff-img-mob{
     display: none;
 }
-.btn-one-121 {
+.btn-one-121{
     background-color: #000;
     padding: 8px 12px 8px 12px;
     font-size: 12px;
     border-radius: 20px;
     color: #fff;
-    margin-top: -25px;
+    margin-top: 0px;
     border: 2px solid #000;
 }
 .btn-one-121:hover{
@@ -982,7 +1075,7 @@ color: #898588;
     font-size: 12px;
     border-radius: 20px;
     color: #000000;
-    margin-top: -25px;
+    margin-top: 0px;
     border: 2px solid #000;
 }
 .bgad-1{
@@ -990,7 +1083,7 @@ color: #898588;
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 530px;
     /* width: 74rem; */
 }
 .bgad-3{
@@ -998,7 +1091,7 @@ color: #898588;
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 530px;
     /* width: 74rem; */
 }
 .bgad-4{
@@ -1006,8 +1099,11 @@ color: #898588;
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 530px;
     /* width: 74rem; */
+}
+#mss{
+    margin-top: 35px;
 }
 .bgad-12{
     background-image: url('../Images/Rectangle-70.png') !important;
@@ -1040,9 +1136,17 @@ color: #898588;
 }
 .crsa {
     height: 300px;
+    
+}
+.crsa:hover{
+    height: 300px;
+    transform: scale(1.1) !important;
+    cursor: pointer;
 }
 .spca{
     width: 17%;
+    overflow: hidden;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .img-to{
     margin-top: -170px;
@@ -1238,10 +1342,18 @@ border-top-right-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
-.necrd .card:hover {
+.necrd .card:hover{
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
+    background-color: #000000;
+    cursor: pointer;
 }
+.necrd .card:hover .headinges{
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+      transform: scale(1.10, 1.10);
+      background-color: #000000;
+      cursor: pointer;
+  }
 
 .card__info {
     z-index: 2;
@@ -1260,11 +1372,22 @@ border-top-right-radius: 12px;
     background-color: #ACACAC;
     text-align: center;
     color:#ffffff;
+    font-weight: 700;
 }
-.heading{
-    background-color: #1E1E1E;
+
+  
+
+.heading-1{
+    background-color: #ACACAC;
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
+    font-weight: 700;
+}
+.heading-1:hover{
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .necrd .card__title {
@@ -1302,9 +1425,38 @@ border-top-right-radius: 12px;
     text-decoration-line: none;
     color: #FFFFFF;
 }
-
+.max-4{
+    margin-top: 20px;
+}
 /* mobile view */
 @media (max-width:540px){
+    .crsa:hover{
+        height: 230px;
+        transform: scale(1.1) !important;
+        cursor: pointer;
+    }
+    .nd-ns .card {
+        margin-right: 25px;
+        transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+        background-color: #fff;
+          width: 100%;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+      }
+      .nd-ns .card:hover{
+        box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+          transform: scale(1.10, 1.10);
+          
+          cursor: pointer;
+      }
+      .nd-ns .card:hover .heading-1{
+          box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+            transform: scale(1.10, 1.10);
+            background-color: #000000;
+            cursor: pointer;
+        }
 
     .bg-human {
         background-color: #000000;
@@ -1468,7 +1620,7 @@ border-top-right-radius: 12px;
         display: flex;
         top: 0%;
         left: 0%;
-        height: 27.5rem;
+        height: 29.5rem;
         border-radius: 20px;
         margin-top: -70px;
     }
@@ -1572,7 +1724,7 @@ border-top-right-radius: 12px;
     }
     .bgad {
     
-        margin-top: -41px !important;
+        margin-top: -120px !important;
     }
     .affliate3-card-head {
         text-align: center;
@@ -1588,7 +1740,7 @@ border-top-right-radius: 12px;
         border-left: 2px solid #fff;
         font-size: 12px;
         border-bottom: none;
-        width: 73px;
+        width: 81px;
     }
     .bgad-1 {
         margin-top: -100px;
@@ -1597,6 +1749,27 @@ border-top-right-radius: 12px;
        
         margin-top: -100px;
     }
+    .cr-two {
+        margin-left: -180px;
+        z-index: -1;
+    }
+    .cr-three {
+        margin-left: -180px;
+        z-index: -2;
+       
+    }
+    .demo-ww{
+        margin-top: 20px;
+    }
+    #card-for-leader{
+     
+        width: 14rem;
+    }
+    .cmc{
+        display: flex;
+        justify-content: center;
+    }
+   
 }
 @media (min-width: 1500px) and (max-width:1890px){
     .cds {
@@ -1618,6 +1791,7 @@ border-top-right-radius: 12px;
         font-weight: bold;
         margin-bottom: 30px;
     }
+
 }
 @media (min-width: 1900px){
     .cds {
@@ -1657,22 +1831,30 @@ border-top-right-radius: 12px;
     }
 }
 @media (min-width:1300px) and (max-width:1490px){
+    .bgad {
+        background-image: url('../Images/Rectangle-55.png') !important;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 530px;
+        /* width: 700px; */
+    }
     .cds {
-        padding: 10px 5px 10px 5px;
-        width: 25rem;
+        padding: 10px 20px 10px 20px;
+        width: 30rem;
         display: flex;
-        top: 11%;
-        left: 19%;
-        height: 25rem;
+        top: 8%;
+        left: 10%;
+        height: 27rem;
         border-radius: 20px;
     }
     .cdsss {
         padding: 10px 5px 10px 5px;
-        width: 25rem;
+        width: 28rem;
         display: flex;
         top: 10%;
-        left: 50%;
-        height: 25rem;
+        left: 53%;
+        height: 27rem;
         border-radius: 20px;
     }
     .cds-1 {
