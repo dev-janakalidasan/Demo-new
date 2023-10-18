@@ -558,7 +558,7 @@
                 process completely free of charge.</p>
             <div class=" learn-more-12">
                 <form class="d-flex" role="search">
-                    <button class="btn btn-one-13" type="submit">Quick comparison&nbsp;&nbsp;<i
+                    <button class="btn btn-one-13" type="submit">Demo Challenge&nbsp;&nbsp;<i
                             class="fa-solid fa-arrow-right-long" style="color: #9ba1ab;"></i></button>
 
                 </form>
@@ -715,10 +715,10 @@
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="row comment">
                     <div class="col-3">
-                        <p class="cus" id="custom">01. Custom</p>
+                        <p class="cus custom-heading-1" id="custom-analyisi">01. Custom</p>
                     </div>
                     <div class="col-4">
-                        <p>02. Account Analysis</p>
+                        <p id="account-analysis" class="custom-heading">02. Account Analysis</p>
                     </div>
                     <div class="col-4">
                         <p>03. Custom</p>
@@ -806,16 +806,13 @@
                 </button>
             </div>
             <div id="arr-ow">
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" id="next-slide-btn" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-
-
-
     </div>
     <!-- next page all card -->
     <div class="container max-2">
@@ -902,6 +899,33 @@
     </div>
     <br>
     <footer></footer>
+    <script>
+        $(document).ready(function() {
+            $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
+                var currentIndex = $(this).find('.carousel-item.active').index();
+    
+                if (currentIndex === 1) {
+                    $('#account-analysis').addClass('custom-heading');
+                    $('#custom-analyisi').removeClass('custom-heading');
+                } else {
+                    $('#custom-analyisi').removeClass('custom-heading');
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
+                var currentIndex = $(this).find('.carousel-item.active').index();
+    
+                if (currentIndex === 1) {
+                    $('#custom-analyisi').addClass('custom-heading-1');
+                    $('#account-analysis').removeClass('custom-heading');
+                } else {
+                    $('#custom-analyisi').removeClass('custom-heading-1');
+                }
+            });
+        });
+    </script>
     <script type="text/javascript">
         AOS.init();
     </script>
