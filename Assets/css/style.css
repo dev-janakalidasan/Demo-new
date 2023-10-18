@@ -811,19 +811,21 @@ width: 117px;
     border-collapse: collapse;
     color: #fff;
     border-bottom: none;
+    cursor: pointer;
  }
  #tab th {
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 40px;
+   
  }
  #tab .how{
     background-color: #1E1E1E;
  }
  #tab .how-1 {
     color: #1E1E1E;
-    width: 40%;
+width: 40%;
     font-weight: 700;
 }
 
@@ -1952,4 +1954,36 @@ border-top-right-radius: 12px;
 }
 .curs div{
   cursor: pointer;
+}
+.eva{
+    display: none !important;
+}
+
+.evalu-1{
+    display: none !important;
+}
+.add{
+    display: block !important;
+    background-color: #1E1E1E !important;
+    color: #fff !important;
+}
+
+
+tbody td {
+    cursor: pointer;
+}
+
+.active-0{
+    background-color: #1E1E1E!important;
+    color: #fff !important;
+}
+.active-1{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+#demo{
+    border: 1px solid;
+}.active-2 {
+    background-color: #007BFF !important; /* Change to your desired background color */
+    color: #FFFFFF !important; /* Change to your desired text color */
 }

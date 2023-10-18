@@ -355,33 +355,33 @@
                 
                 <div class="row">
                     <div class="col-2 d-flex">
-                        <button class="flg-btn f-bt"><img src="./Assets/Images/usd-round-flag.png"
+                        <button class="flg-btn f-bt" id="use"><img src="./Assets/Images/usd-round-flag.png"
                                 class="flg">&nbsp;&nbsp;USD</button>
                     </div>
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/gbp-round-flag.png"
+                        <button class="flg-btn" id="gbp"><img src="./Assets/Images/gbp-round-flag.png"
                                 class="flg">&nbsp;&nbsp;GBP</button>
                     </div>
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/eur-round-flag.png"
+                        <button class="flg-btn" id="eur"><img src="./Assets/Images/eur-round-flag.png"
                                 class="flg">&nbsp;&nbsp;EUR</button>
                     </div>
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/czk-round-flag.png"
+                        <button class="flg-btn" id="czk"><img src="./Assets/Images/czk-round-flag.png"
                                 class="flg">&nbsp;&nbsp;CZK</button>
                     </div>
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/cad-round-flag.png"
+                        <button class="flg-btn" id="cad"><img src="./Assets/Images/cad-round-flag.png"
                                 class="flg">&nbsp;CAD</button>
                     </div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/aud-round-flag.png"
+                        <button class="flg-btn" id="aud"><img src="./Assets/Images/aud-round-flag.png"
                                 class="flg">&nbsp;&nbsp;AUD</button>
                     </div>
                     <div class="col-2 d-flex">
-                        <button class="flg-btn"><img src="./Assets/Images/chf-round-flag.png"
+                        <button class="flg-btn" id="chf"><img src="./Assets/Images/chf-round-flag.png"
                                 class="flg">&nbsp;&nbsp;CHF</button>
                     </div>
 
@@ -390,11 +390,11 @@
                     <h6 class="curr">Risk:</h6>
                     <div class="row mt-2 dollers">
                         <div class="col-2">
-                            <button class="flg-btn f-bt">Normal</button>
+                            <button class="flg-btn f-bt" id="nor">Normal</button>
                         </div>
                         <br>
                         <div class="col-2">
-                            <button class="flg-btn">Aggressive</button>
+                            <button class="flg-btn" id="agg">Aggressive</button>
                         </div>
                     </div>
 
@@ -405,20 +405,20 @@
                     </h6>
                     <div class="row dollers">
                         <div class="col-2">
-                            <button class="flg-btn f-bt">$10000</button>
+                            <button class="flg-btn f-bt" id="first">$10000</button>
                         </div>
                         <div class="col-2">
-                            <button class="flg-btn">$25000</button>
+                            <button class="flg-btn" id="second">$25000</button>
                         </div>
                         <div class="col-2">
-                            <button class="flg-btn">$50000</button>
+                            <button class="flg-btn" id="third">$50000</button>
                         </div>
                         <div class="col-2">
-                            <button class="flg-btn">$100000</button>
+                            <button class="flg-btn" id="fourth">$100000</button>
                         </div>
                         <br>
                         <div class="col-2">
-                            <button class="flg-btn">$200000</button>
+                            <button class="flg-btn" id="fifth">$200000</button>
                         </div>
                     </div>
                 </div>
@@ -899,6 +899,65 @@
     </div>
     <br>
     <footer></footer>
+    <script>
+        $(document).ready(function() {
+    $("#use").click(function() {
+        // Remove 'active' class from all buttons
+        $(".flg-btn").removeClass('active-2');
+        
+        // Add 'active' class to the clicked button
+        $(this).addClass('active-2');
+    });
+});
+    </script>
+    <script>
+
+
+
+         function updateFAQContent(first, second, third, fourth, fifth) {
+    document.getElementById("first").textContent = first;
+    document.getElementById("second").textContent = second;
+    document.getElementById("third").textContent = third;
+    document.getElementById("fourth").textContent = fourth;
+    document.getElementById("fifth").textContent = fifth;
+}
+
+document.getElementById("use").addEventListener("click", function() {
+    updateFAQContent("$10000", "$25000", "$50000", "$100000", "$200000");
+});
+
+document.getElementById("gbp").addEventListener("click", function() {
+    updateFAQContent("$20000", "$35000", "$60000", "$150000", "$250000");
+});
+
+document.getElementById("eur").addEventListener("click", function() {
+    updateFAQContent("$30000", "$45000", "$65000", "$170000", "$300000");
+});
+
+document.getElementById("czk").addEventListener("click", function() {
+    updateFAQContent("$40000", "$55000", "$70000", "$170000", "$400000");
+});
+
+document.getElementById("cad").addEventListener("click", function() {
+    updateFAQContent("$50000", "$65000", "$70000", "$200000", "$400000");
+});
+
+document.getElementById("aud").addEventListener("click", function() {
+    updateFAQContent("$60000", "$52000", "$57000", "$400000", "$500000");
+
+   
+
+});
+document.getElementById("chf").addEventListener("click", function() {
+        updateFAQContent("$23000", "$45000", "$250020", "$400000", "700000");
+});
+document.getElementById("agg").addEventListener("click", function() {
+        updateFAQContent("$83000", "$25000", "$350020", "$700000", "900000");
+});
+document.getElementById("nor").addEventListener("click", function() {
+        updateFAQContent("$13000", "$22000", "$50020", "$70000", "940000");
+});
+    </script>
     <script>
         $(document).ready(function() {
             $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {

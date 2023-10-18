@@ -54,34 +54,34 @@
                     <thead>
                       <tr class="newsa-faq">
                        
-                        <th scope="col" class="sec">New with DEMO</th>
-                        <th scope="col" >New with DEMO</th>
-                       
+                        <th scope="col" class="sec" id="demo">New with DEMO</th>
+                        <th scope="col" id="demo-1">New with DEMO</th>
+                    
                       </tr>
                     </thead>
                     <tbody class="faq-tab-body">
                       <tr>
                     
-                        <td class="how-1">Evaluation Process</td>
-                        <td class="how">. How to start?</td>
+                        <td class="how-1" id="evaluation">Evaluation Process</td>
+                        <td class="how" id="first"> How to start?</td>
                       
                       </tr>
                       <tr>
                    
-                        <td class="how-1">Rules</td>
-                        <td class="how">. Is DEMO a serious company?</td>
+                        <td class="how-1" id="rules">Rules</td>
+                        <td class="how" id="second"> Is DEMO a serious company?</td>
                       </tr>
                       <tr>
-                        <td class="how-1">DEMO Account</td>
-                        <td class="how">. What is DEMO?</td>
+                        <td class="how-1" id="Demo Account">DEMO Account</td>
+                        <td class="how" id="third"> What is DEMO?</td>
                       </tr>
                       <tr>
-                        <td class="how-1">Platforms</td>
-                        <td class="how">. Who can join DEMO?</td>
+                        <td class="how-1" id="platforms">Platforms</td>
+                        <td class="how" id="fourth"> Who can join DEMO?</td>
                       </tr>
                       <tr>
-                        <td class="how-1">Applications & other Services</td>
-                        <td class="how">. Why should I join DEMO?</td>
+                        <td class="how-1" id="application">Applications & other Services</td>
+                        <td class="how" id="fifth"> Why should I join DEMO?</td>
                       </tr>
                     </tbody>
                   </table>
@@ -95,6 +95,92 @@
   </div>
     <br>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+       $(document).ready(function() {
+            // Add a click event handler for table header cells with IDs
+            $("td[id]").click(function() {
+                $("td[id]").removeClass('active-0');
+                $(this).toggleClass('active-0');
+                $("#demo").addClass('active-1')
+            });
+            $("#demo").click(function() {
+              $("td[id]").removeClass('active-0');
+                $(this).removeClass('active-1')
+            });
+
+        });
+  // evalu
+  function updateFAQContent(title, first, second, third, fourth, fifth) {
+    document.getElementById("demo-1").textContent = title;
+    document.getElementById("first").textContent = first;
+    document.getElementById("second").textContent = second;
+    document.getElementById("third").textContent = third;
+    document.getElementById("fourth").textContent = fourth;
+    document.getElementById("fifth").textContent = fifth;
+}
+
+document.getElementById("demo").addEventListener("click", function() {
+    updateFAQContent("New with DEMO", "How to start?", "Is DEMO a serious company?", "What is DEMO?", "Who can join DEMO?", "Why should I join DEMO?");
+});
+
+document.getElementById("evaluation").addEventListener("click", function() {
+    updateFAQContent("Evaluation Process", "Why should I join DEMO?", "Who can join DEMO?", "Why should I join DEMO?", "Evaluation Process", "Is DEMO a serious company?");
+});
+
+document.getElementById("rules").addEventListener("click", function() {
+    updateFAQContent("Rules", "Why should I join DEMO?-1", "Who can join DEMO?-1", "Why should I join DEMO?-1", "Evaluation Process-1", "Is DEMO a serious company?-1");
+});
+
+document.getElementById("Demo Account").addEventListener("click", function() {
+    updateFAQContent("DEMO Account", "Why should I join DEMO?-2", "Who can join DEMO?-2", "Why should I join DEMO?-2", "Evaluation Process-2", "Is DEMO a serious company?-2");
+});
+
+document.getElementById("platforms").addEventListener("click", function() {
+    updateFAQContent("Platforms", "Why should I join DEMO?-3", "Who can join DEMO?-3", "Why should I join DEMO?-3", "Evaluation Process-3", "Is DEMO a serious company?-3");
+});
+
+document.getElementById("application").addEventListener("click", function() {
+    updateFAQContent("Applications & other Services", "Why should I join DEMO?-4", "Who can join DEMO?-4", "Why should I join DEMO?-4", "Evaluation Process-4", "Is DEMO a serious company?-4");
+});
+
+  </script>
+
+
+    <script>
+
+   
+//     $(document).ready(function() {
+//   $('#demo').click(function() {
+//     $('#demo-2').toggleClass('add');
+//     $('#demo-1').toggleClass('add');
+//     $('#demo').toggleClass('neads');
+//     $('#evaluation').toggleClass('neadd');
+//     $('#demo-3').toggleClass('add'); // Fixed typo here, should be `removeClass`
+//   });
+// });
+
+// $(document).ready(function() {
+//   $('#evaluation').click(function() {
+//     $('#demo-2').toggleClass('add');
+//     $('#demo-1').toggleClass('evalu-1');
+//     $('#evaluation').toggleClass('add');
+//     $('#demo').toggleClass('neadd');
+//     $('#demo-3').toggleClass('add'); // Fixed typo here, should be `removeClass`
+//   });
+// });
+
+// $(document).ready(function() {
+//   $('#rules').click(function() {
+//     $('#demo-3').addClass('add');
+//     $('#demo-1').addClass('evalu-1');
+//     $('#rules').addClass('neads');
+//     $('#demo-2').toggleClass('evalu-1');
+//   });
+// });
+
+    </script>
     <script type="text/javascript">
       AOS.init();
   </script>
