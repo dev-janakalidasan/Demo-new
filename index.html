@@ -355,7 +355,7 @@
                 
                 <div class="row">
                     <div class="col-2 d-flex">
-                        <button class="flg-btn f-bt" id="use"><img src="./Assets/Images/usd-round-flag.png"
+                        <button class="flg-btn active" id="use"><img src="./Assets/Images/usd-round-flag.png"
                                 class="flg">&nbsp;&nbsp;USD</button>
                     </div>
                     <div class="col-2 d-flex">
@@ -389,12 +389,12 @@
                 <div class="max">
                     <h6 class="curr">Risk:</h6>
                     <div class="row mt-2 dollers">
-                        <div class="col-2">
-                            <button class="flg-btn f-bt" id="nor">Normal</button>
+                        <div class="col-lg-2 col-4">
+                            <button class="flg-btn-2 active" id="nor">Normal</button>
                         </div>
                         <br>
-                        <div class="col-2">
-                            <button class="flg-btn" id="agg">Aggressive</button>
+                        <div class="col-lg-2 col-4">
+                            <button class="flg-btn-2" id="agg">Aggressive</button>
                         </div>
                     </div>
 
@@ -404,21 +404,21 @@
                     <h6 class="curr">Balance:
                     </h6>
                     <div class="row dollers">
-                        <div class="col-2">
-                            <button class="flg-btn f-bt" id="first">$10000</button>
+                        <div class="col-lg-2 col-md-2 col-3">
+                            <button class="flg-btn-3 active" id="first">$10000</button>
                         </div>
-                        <div class="col-2">
-                            <button class="flg-btn" id="second">$25000</button>
+                        <div class="col-lg-2 col-md-2 col-3">
+                            <button class="flg-btn-3" id="second">$25000</button>
                         </div>
-                        <div class="col-2">
-                            <button class="flg-btn" id="third">$50000</button>
+                        <div class="col-lg-2 col-md-2 col-3">
+                            <button class="flg-btn-3" id="third">$50000</button>
                         </div>
-                        <div class="col-2">
-                            <button class="flg-btn" id="fourth">$100000</button>
+                        <div class="col-lg-2 col-md-2 col-3">
+                            <button class="flg-btn-3" id="fourth">$100000</button>
                         </div>
                         <br>
-                        <div class="col-2">
-                            <button class="flg-btn" id="fifth">$200000</button>
+                        <div class="col-lg-2 col-md-2 col-3 mt-1">
+                            <button class="flg-btn-3" id="fifth">$200000</button>
                         </div>
                     </div>
                 </div>
@@ -900,15 +900,38 @@
     <br>
     <footer></footer>
     <script>
-        $(document).ready(function() {
-    $(".flg-btn").click(function() {
-        // Remove 'active' class from all buttons
-        $(".flg-btn").removeClass('active-2');
-        
-        // Add 'active' class to the clicked button
-        $(this).addClass('active-2');
+  const buttons = document.querySelectorAll('.flg-btn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        buttons.forEach(btn => {
+            btn.classList.remove('active'); 
+        });
+        button.classList.add('active');
     });
 });
+
+const buttonas = document.querySelectorAll('.flg-btn-2');
+buttonas.forEach(button => {
+    button.addEventListener('click', () => {
+        buttonas.forEach(btn => {
+            btn.classList.remove('active');     
+        });
+        button.classList.add('active');
+    });
+});
+
+const buttonass = document.querySelectorAll('.flg-btn-3');
+
+buttonass.forEach(button => {
+    button.addEventListener('click', () => {
+        buttonass.forEach(btn => {
+            btn.classList.remove('active');           
+        });
+        button.classList.add('active');
+    });
+});
+
     </script>
     <script>
 

@@ -122,6 +122,10 @@ body{
     padding: 30px 0px 30px 0px;
     width: 60%;
 }
+.pho-trade-1{
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+}
 .sec-3{
     color: #000;
     font-weight: 600;
@@ -345,6 +349,24 @@ hr {
     cursor: pointer;
     text-decoration-line: none !important;
 }
+.flg-btn-2{
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration-line: none !important;
+}
+.flg-btn-3{
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration-line: none !important;
+}
 .f-bt{
 color: #FFF;
 background-color: #2E2E2E;
@@ -438,6 +460,7 @@ margin-bottom: 50px !important;
     padding: 40px 0px 41px 0px;
     background-color: #000;
     border-radius: 40px;
+    margin-bottom: 6%;
 }
 .joins h3 {
     text-align: center;
@@ -522,6 +545,15 @@ margin-bottom: 50px !important;
     height: 500px;
     /* width: 74rem; */
 }
+.bgad-6{
+    background-image: url('../Images/Rectangle-7.png') !important;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    /* width: 74rem; */
+}
+
 #seala {
     font-size: 13px;
     color: #4B4A4A;
@@ -796,6 +828,10 @@ width: 117px;
 .faq-tab-body tr td{
     text-align: start;
 
+
+}
+#tab{
+    margin-bottom: 7%;
 }
 #tab  td {
        border-collapse: collapse;
@@ -1459,6 +1495,23 @@ border-top-right-radius: 12px;
 }
 /* mobile view */
 @media (max-width:540px){
+    #tab .how {
+        background-color: #1E1E1E;
+        font-size: 11px;
+    }
+    #tab .how-1 {
+        color: #1E1E1E;
+        width: 40%;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    #tab th {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+        font-size: 12px;
+    }
     .owl-dots {
         text-align: center;
         margin-top: -54px;
@@ -1733,10 +1786,10 @@ border-top-right-radius: 12px;
         margin-top: 30px;
     }
     #seala-1 {
-        font-size: 12px;
+        font-size: 11px;
         color: grey;
         margin-bottom: 30px;
-        line-height: 47px;
+        line-height: 30px;
     }
     .nxsa-1 {
         line-height: 158%;
@@ -1793,6 +1846,10 @@ border-top-right-radius: 12px;
         color: #fff;
     }
     .bgad {
+    
+        margin-top: -120px !important;
+    }
+    .bgad-6{
     
         margin-top: -120px !important;
     }
@@ -1910,6 +1967,14 @@ border-top-right-radius: 12px;
         height: 530px;
         /* width: 700px; */
     }
+    .bgad-6{
+        background-image: url('../Images/Rectangle-7.png') !important;
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 530px;
+        /* width: 700px; */
+    }
     .cds {
         padding: 10px 20px 10px 20px;
         width: 30rem;
@@ -1988,10 +2053,22 @@ tbody td {
 #demo{
     border: 1px solid;
 }.active-3 {
-    background-color: #007BFF; /* Change to your desired background color */
+    background-color: #2E2E2E; /* Change to your desired background color */
     color: #FFFFFF; /* Change to your desired text color */
 }
 
 
 
 
+.flg-btn.active {
+    background-color:#2E2E2E;
+    color: #fff;
+}
+.flg-btn-2.active {
+    background-color:#2E2E2E;
+    color: #fff;
+}
+.flg-btn-3.active {
+    background-color:#2E2E2E;
+    color: #fff;
+}

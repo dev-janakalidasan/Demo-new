@@ -168,7 +168,7 @@
     <!-- sect-2-end -->
     <!-- sect-3 -->
     <div class="container max-2">
-        <div class="bgad">
+        <div class="bgad-6">
             <div class="card cds">
                 <div class="card-body">
                     <h5 class="card-title swing">Scaling Plan highlights</h5>
@@ -239,8 +239,8 @@
 
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
-                <div class="card bg-s">
-                    <img src="./Assets/Images/Frame-phone.png" class="pho-trade">
+                <div class="">
+                    <img src="./Assets/Images/Rectangle-5.png" class="pho-trade-1">
                 </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12">
@@ -264,7 +264,7 @@
                 <h6>Currency:</h6>
                 <div class="row">
                     <div class="col-2">
-                        <button class="flg-btn f-bt" id="use"><img src="./Assets/Images/usd-round-flag.png"
+                        <button class="flg-btn active" id="use"><img src="./Assets/Images/usd-round-flag.png"
                                 class="flg">&nbsp;&nbsp;USD</button>
                     </div>
                     <div class="col-2">
@@ -376,6 +376,19 @@
     <br>
     <footer></footer>
     <script>
+ const buttons = document.querySelectorAll('.flg-btn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        buttons.forEach(btn => {
+            btn.classList.remove('active'); 
+        });
+        button.classList.add('active');
+    });
+});
+
+
+
         function updateFAQContent(first, second, third, fourth, fifth, sisth, seven, eight, nine, ten, eleven, twelve, thirteen,fourteen,fifteen) {
    document.getElementById("first").textContent = first;
    document.getElementById("second").textContent = second;
