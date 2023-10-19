@@ -901,7 +901,7 @@
     <footer></footer>
     <script>
         $(document).ready(function() {
-    $("#use").click(function() {
+    $(".flg-btn").click(function() {
         // Remove 'active' class from all buttons
         $(".flg-btn").removeClass('active-2');
         
@@ -944,9 +944,6 @@ document.getElementById("cad").addEventListener("click", function() {
 
 document.getElementById("aud").addEventListener("click", function() {
     updateFAQContent("$60000", "$52000", "$57000", "$400000", "$500000");
-
-   
-
 });
 document.getElementById("chf").addEventListener("click", function() {
         updateFAQContent("$23000", "$45000", "$250020", "$400000", "700000");
@@ -958,33 +955,7 @@ document.getElementById("nor").addEventListener("click", function() {
         updateFAQContent("$13000", "$22000", "$50020", "$70000", "940000");
 });
     </script>
-    <script>
-        $(document).ready(function() {
-            $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
-                var currentIndex = $(this).find('.carousel-item.active').index();
     
-                if (currentIndex === 1) {
-                    $('#account-analysis').addClass('custom-heading');
-                    $('#custom-analyisi').removeClass('custom-heading');
-                } else {
-                    $('#custom-analyisi').removeClass('custom-heading');
-                }
-            });
-        });
-
-        $(document).ready(function() {
-            $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
-                var currentIndex = $(this).find('.carousel-item.active').index();
-    
-                if (currentIndex === 1) {
-                    $('#custom-analyisi').addClass('custom-heading-1');
-                    $('#account-analysis').removeClass('custom-heading');
-                } else {
-                    $('#custom-analyisi').removeClass('custom-heading-1');
-                }
-            });
-        });
-    </script>
     <script type="text/javascript">
         AOS.init();
     </script>

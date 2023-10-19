@@ -342,6 +342,8 @@ hr {
     border: none;
     font-size: 12px;
     font-weight: 600;
+    cursor: pointer;
+    text-decoration-line: none !important;
 }
 .f-bt{
 color: #FFF;
@@ -1705,6 +1707,8 @@ border-top-right-radius: 12px;
         border-radius: 20px;
         border: none;
         font-size: 9px;
+        cursor: pointer;
+        text-decoration-line: none !important;
     }
     .befores {
      
@@ -1983,7 +1987,11 @@ tbody td {
 }
 #demo{
     border: 1px solid;
-}.active-2 {
-    background-color: #007BFF !important; /* Change to your desired background color */
-    color: #FFFFFF !important; /* Change to your desired text color */
+}.active-3 {
+    background-color: #007BFF; /* Change to your desired background color */
+    color: #FFFFFF; /* Change to your desired text color */
 }
+
+
+
+
