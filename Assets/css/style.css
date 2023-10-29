@@ -1511,6 +1511,9 @@ border-top-right-radius: 12px;
     #sre {
         margin-top: -55px;
     }
+    .queste{
+        padding: 25px !important;
+    }
     .joins p {
         font-size: 19px;
         text-align: center;
