@@ -137,7 +137,9 @@ body{
 .m-t {
     margin-top: 10%;
 }
-
+.msc{
+    margin-top: -83px;
+}
 .fir-img{
 width: 85px;
 height: 85px;
@@ -186,14 +188,13 @@ margin-bottom: 5px;
     margin-top: -38px;
     border: 2px solid #000;
 }
-.btn-one-2{
- 
+.btn-one-2 {
     background-color: #000;
     padding: 7px 30px 7px 30px;
     font-size: 14px;
     border-radius: 20px;
     color: #fff;
-    margin-top: 0px;
+    margin-top: 50px;
     border: 2px solid #000;
 }
 .btn-one-2:hover{
@@ -203,7 +204,7 @@ margin-bottom: 5px;
     font-size: 14px;
     border-radius: 20px;
     color: #000;
-    margin-top: 0px;
+    margin-top: 50px;
     border: 2px solid #000;
 }
 #navbarSupportedContent ul li a {
@@ -477,7 +478,7 @@ margin-bottom: 50px !important;
     color: #fff;
 }
 .joins p {
-    font-size: 15px;
+    font-size: 21px;
     text-align: center;
     margin-bottom: 73px;
     color: #fff;
@@ -519,7 +520,7 @@ margin-bottom: 50px !important;
     margin-top: -30px;
     border: 1px solid #fff;
     height: 45px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .btn-one-13:hover {
     background-color: #fff;
@@ -530,7 +531,7 @@ margin-bottom: 50px !important;
     margin-top: -30px;
     border: 1px solid #fff;
     height: 45px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .bgs{
     height: 16%;
@@ -651,8 +652,9 @@ width: 117px;
     font-size: 19px;
     font-weight: 700;
 } */
-.foot-heads{
+.foot-heads {
     font-weight: 600;
+    margin-bottom: 16px;
 }
 .carousel-indicators #new-cio {
     box-sizing: content-box;
@@ -1137,7 +1139,7 @@ color: #898588;
     font-size: 12px;
     border-radius: 20px;
     color: #fff;
-    margin-top: 0px;
+    margin-top: 4px;
     border: 2px solid #000;
 }
 .btn-one-121:hover{
@@ -1146,7 +1148,7 @@ color: #898588;
     font-size: 12px;
     border-radius: 20px;
     color: #000000;
-    margin-top: 0px;
+    margin-top: 4px;
     border: 2px solid #000;
 }
 .bgad-1{
@@ -1297,7 +1299,8 @@ color: #898588;
   }
   .owl-dots {
     text-align: center;
-  }
+    margin-top: -35px;
+}
   /* .owl-dots .owl-dot {
     height: 10px;
     width: 10px;
@@ -1533,7 +1536,7 @@ border-top-right-radius: 12px;
     }
     .m-t {
         margin-top: 10%;
-        font-size: 20px;
+        font-size: 18px;
     }
     #tab .how {
         background-color: #1E1E1E;
@@ -1545,6 +1548,11 @@ border-top-right-radius: 12px;
     .cen-crd{
         display: flex;
         justify-content: center;
+    }
+    .pho-trade-1 {
+        padding: 30px 0px 30px 0px;
+        width: 100%;
+        margin-top: -30px;
     }
     .aff-sec-con-out-1 {
         text-align: center;
@@ -1579,13 +1587,48 @@ border-top-right-radius: 12px;
     .btn-one-13 {
         background-color: #000;
         padding: 10px 35px 10px 35px;
-        font-size: 10px;
+        font-size: 9px;
         border-radius: 40px;
         color: #fff;
         margin-top: -30px;
         border: 1px solid #fff;
         height: 45px;
-        font-weight: 500;
+        font-weight: 700;
+    }
+    .btn-one-13:hover {
+        background-color: #fff;
+        padding: 10px 30px 10px 30px;
+        font-size: 9px;
+        border-radius: 40px;
+        color: #000;
+        margin-top: -30px;
+        border: 1px solid #fff;
+        height: 45px;
+        font-weight: 700;
+    }
+
+
+    .btn-one-1312 {
+        background-color: #000;
+        padding: 10px 35px 10px 35px;
+        font-size: 11px;
+        border-radius: 40px;
+        color: #fff;
+        margin-top: -30px;
+        border: 1px solid #fff;
+        height: 45px;
+        font-weight: 700;
+    }
+    .btn-one-1312:hover {
+        background-color: #fff;
+        padding: 10px 30px 10px 30px;
+        font-size: 11px;
+        border-radius: 40px;
+        color: #000;
+        margin-top: -30px;
+        border: 1px solid #fff;
+        height: 45px;
+        font-weight: 700;
     }
       .crd-1 {
         border: 1.5px solid #000;
@@ -1785,7 +1828,7 @@ border-top-right-radius: 12px;
         text-align: center;
         font-weight: 500;
         margin-top: 65px;
-        font-size: 28px;
+        font-size: 24px;
     }
     .con-us-1 {
         color: #000000;
@@ -1847,6 +1890,25 @@ border-top-right-radius: 12px;
         width: 50%;
         padding: 15px 0px 15px 15px;
         border-radius: 40px 0px 0px 40px;
+        font-size: 24px;
+    }
+    .btn-one-2 {
+        background-color: #000;
+        padding: 7px 30px 7px 30px;
+        font-size: 14px;
+        border-radius: 20px;
+        color: #fff;
+        margin-top: -25px;
+        border: 2px solid #000;
+    }
+    .btn-one-2:hover {
+        background-color: #FFF;
+        padding: 7px 30px 7px 30px;
+        font-size: 14px;
+        border-radius: 20px;
+        color: #000;
+        margin-top: -25px;
+        border: 2px solid #000;
     }
     .arr-ow-1 .carousel-control-prev {
         left: 35% !important;
@@ -2189,7 +2251,7 @@ tbody td {
     font-size: 38px;
     font-weight: 369;
     line-height: 58px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     font-weight: 700;
 }
 .icons{
@@ -2200,8 +2262,43 @@ tbody td {
 }
 
 #hows{
-    display: none;
+    display: block;
 }
 .icons a{
   cursor: pointer;
+}
+.risk {
+    margin-top: 36px;
+}
+.new-lines a p{
+    margin-bottom: 10px !important;
+}
+.m-m{
+    margin-bottom: 10px !important;
+}
+.foot-style p{
+    margin-bottom: 10px !important;
+}
+
+.btn-one-1312 {
+    background-color: #000;
+    padding: 10px 35px 10px 35px;
+    font-size: 11px;
+    border-radius: 40px;
+    color: #fff;
+    margin-top: -30px;
+    border: 1px solid #fff;
+    height: 45px;
+    font-weight: 700;
+}
+.btn-one-1312:hover {
+    background-color: #fff;
+    padding: 10px 30px 10px 30px;
+    font-size: 11px;
+    border-radius: 40px;
+    color: #000;
+    margin-top: -30px;
+    border: 1px solid #fff;
+    height: 45px;
+    font-weight: 700;
 }
